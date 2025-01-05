@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-image: url('background.webp'); /* 設置背景圖片為 WebP 格式 */
+  background-size: cover; /* 讓圖片覆蓋整個背景 */
+  background-position: center; /* 圖片居中 */
+  background-attachment: fixed; /* 固定背景圖片，避免滾動時移動 */
+  height: 100vh; /* 設置背景高度為視窗高度 */
+}
+
+.game-container {
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.85); /* 背景半透明，提升可讀性 */
+  padding: 20px;
+  border-radius: 10px; /* 圓角容器 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* 添加陰影，增加層次感 */
+}
+
+.timer, .score {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.question {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.option-button {
+  display: block;
+  margin: 10px auto; /* 增加按鈕之間的間距 */
+  padding: 15px 20px; /* 放大按鈕 */
+  font-size: 18px; /* 增大按鈕文字大小 */
+  width: 80%; /* 按鈕寬度佔整個容器的 80% */
+  background-color: #4CAF50; /* 綠色背景 */
+  color: white; /* 白色文字 */
+  border: none;
+  border-radius: 10px; /* 圓角按鈕 */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 增加鼠標移入效果 */
+}
+
+.option-button:hover {
+  background-color: #45a049; /* 鼠標移入時變深的綠色 */
+}
+
+.option-button:disabled {
+  background-color: #ccc; /* 禁用狀態的灰色背景 */
+  cursor: not-allowed;
+}
+
+#start {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#start:hover {
+  background-color: #0056b3;
+}
+
+#start:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
